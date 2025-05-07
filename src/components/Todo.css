@@ -1,0 +1,158 @@
+/* Todo.css */
+
+/* Container for the whole todo app */
+.todo-container {
+    width: 90%;
+    margin: 30px auto;
+  }
+  
+  /* Input section for adding todos */
+  .input-container {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  /* Input field styling */
+  .input-field {
+    padding: 12px 16px;
+    width: 60%;
+    min-width: 250px;
+    border: 1px solid #F75A5A;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    color: #F75A5A;  /* Text color matching the theme */
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  /* Focus effect on input */
+  .input-field:focus {
+    border-color: #077A7D;
+    box-shadow: 0 0 8px rgba(0, 122, 125, 0.4);
+  }
+  
+  /* Add button styling */
+  .add-button {
+    padding: 12px 20px;
+    background-color: #F75A5A;
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    min-width: 120px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  /* Add button hover effect */
+  .add-button:hover {
+    background-color: #FF4D4D;
+    transform: scale(1.05);
+  }
+  
+  /* Column layout for the todo categories */
+  .columns-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  /* Individual columns for categories */
+  .column {
+    flex: 1;
+    min-width: 300px;
+    min-height: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Todo list container */
+  .todo-list {
+    list-style-type: none;
+    padding-left: 0;
+    flex-grow: 1;
+  }
+  
+  /* Individual todo item styling */
+  .todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    background-color: #FFF;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+    color: #333; /* General text color */
+  }
+  
+  /* Delete button */
+  .delete-button {
+    background-color: transparent;
+    border: none;
+    color: #999; /* Default text color for delete button */
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 10px;
+    transition: color 0.3s, transform 0.2s;
+  }
+  
+  /* Delete button hover effect */
+  .delete-button:hover {
+    color: #F75A5A; /* Text color matching the theme on hover */
+    transform: scale(1.1);
+  }
+  
+  /* Hover background color changes based on todo status */
+  .todo-item.todo:hover {
+    background-color: #F75A5A;
+    color: #FFF; /* Text color matching the theme on hover */
+  }
+  
+  .todo-item.inprogress:hover {
+    background-color: #FFD63A;
+    color: #000;
+  }
+  
+  .todo-item.complete:hover {
+    background-color: #077A7D;
+    color: #FFF; /* Text color matching the theme on hover */
+  }
+  
+  /* Column heading styling */
+  .column h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333; /* General column heading text color */
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+  
+  /* Hover Effect for Delete Button */
+  .delete-button:hover {
+    color: #ff0000; /* Text color for delete button hover */
+  }
+  
+  /* Icon adjustments (optional: smooth scaling on hover) */
+  .delete-button svg {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .delete-button:hover svg {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+  }
+  
