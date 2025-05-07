@@ -144,7 +144,7 @@
   
   /* Hover Effect for Delete Button */
   .delete-button:hover {
-    color: #ff0000; /* Text color for delete button hover */
+    color: #FF4D4D; /* Text color for delete button hover */
   }
   
   /* Icon adjustments (optional: smooth scaling on hover) */
